@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>UDYCLEMZ | Art • Design • Creativity</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,800;1,600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container" class="toast-container"></div>
+
+  <!-- Header Navigation -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo-link nav-link">
+        <svg class="brand-logo" viewBox="0 0 240 60" width="160" height="40" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#a855f7"/>
+              <stop offset="50%" stop-color="#ec4899"/>
+              <stop offset="100%" stop-color="#f59e0b"/>
+            </linearGradient>
+            <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+              <feGaussianBlur stdDeviation="3" result="blur" />
+              <feComposite in="SourceGraphic" in2="blur" operator="over" />
+            </filter>
+          </defs>
+          <path d="M 15 15 C 5 25, 25 45, 15 50" stroke="url(#logoGrad)" stroke-width="4" fill="none" stroke-linecap="round"/>
+          <path d="M 12 10 Q 30 30 12 50" stroke="url(#logoGrad)" stroke-width="3" fill="none" opacity="0.6"/>
+          <circle cx="32" cy="18" r="4" fill="#a855f7" />
+          <circle cx="38" cy="32" r="3.5" fill="#ec4899" />
+          <circle cx="28" cy="44" r="3" fill="#f59e0b" />
+          <text x="52" y="38" font-family="'Outfit', sans-serif" font-weight="800" font-size="24" fill="#ffffff" letter-spacing="2">UDYCLEMZ</text>
+          <text x="54" y="49" font-family="'Outfit', sans-serif" font-weight="500" font-size="7" fill="url(#logoGrad)" letter-spacing="3.5">ART • DESIGN • CREATIVITY</text>
+        </svg>
+      </a>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle navigation menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <!-- Desktop & Mobile Menu -->
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-auth-buttons">
+          <button class="btn btn-outline" id="nav-login-btn">Login</button>
+          <button class="btn btn-primary" id="nav-signup-btn">Sign Up</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HOME PAGE SECTION -->
+    <section id="home" class="page-section active">
+      <div class="hero">
+        <div class="hero-bg-glow glow-1"></div>
+        <div class="hero-bg-glow glow-2"></div>
+        <div class="container hero-content">
+          <span class="badge"><i class="fa-solid fa-wand-magic-sparkles"></i> Welcome to UDYCLEMZ</span>
+          <h1 class="hero-title">Where Art Meets <span class="gradient-text">Creativity</span></h1>
+          <p class="hero-description">
+            UDYCLEMZ is a premier creative brand specializing in high-impact visual design, fine arts, photography, digital illustration, crafts, and brand identity. We turn abstract ideas into memorable visual experiences.
+          </p>
+          <div class="hero-cta-group">
+            <a href="#gallery" class="btn btn-primary btn-lg nav-link"><i class="fa-solid fa-palette"></i> Explore Gallery</a>
+            <a href="#services" class="btn btn-secondary btn-lg nav-link"><i class="fa-solid fa-layer-group"></i> Our Services</a>
+            <a href="tel:07076226098" class="btn btn-outline btn-lg"><i class="fa-solid fa-phone"></i> Direct Call</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Stats -->
+      <div class="stats-bar">
+        <div class="container stats-grid">
+          <div class="stat-item">
+            <h3>500+</h3>
+            <p>Artworks Created</p>
+          </div>
+          <div class="stat-item">
+            <h3>120+</h3>
+            <p>Brands Transformed</p>
+          </div>
+          <div class="stat-item">
+            <h3>99%</h3>
+            <p>Client Satisfaction</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Creative Pillars Section -->
+      <div class="container section-padding">
+        <div class="text-center mb-4">
+          <h2 class="section-title">Our Creative <span class="gradient-text">Pillars</span></h2>
+          <p class="section-subtitle">Discover how we redefine artistic expression across various creative disciplines.</p>
+        </div>
+
+        <div class="pillars-grid">
+          <div class="pillar-card">
+            <div class="pillar-icon"><i class="fa-solid fa-lightbulb"></i></div>
+            <h3>Creativity</h3>
+            <p>Unbounded imagination driving groundbreaking concepts, distinct storytelling, and fresh artistic perspectives.</p>
+          </div>
+          <div class="pillar-card">
+            <div class="pillar-icon"><i class="fa-solid fa-paint-brush"></i></div>
+            <h3>Fine Art</h3>
+            <p>Masterful painting, sketching, and traditional craftwork that captures emotion, beauty, and detail.</p>
+          </div>
+          <div class="pillar-card">
+            <div class="pillar-icon"><i class="fa-solid fa-vector-square"></i></div>
+            <h3>Design</h3>
+            <p>Strategic visual design for identity, modern branding, posters, and captivating social media graphics.</p>
+          </div>
+          <div class="pillar-card">
+            <div class="pillar-icon"><i class="fa-solid fa-camera-retro"></i></div>
+            <h3>Photography</h3>
+            <p>Professional visual storytelling through lens, color grading, framing, and evocative lighting concepts.</p>
+          </div>
+          <div class="pillar-card">
+            <div class="pillar-icon"><i class="fa-solid fa-scissors"></i></div>
+            <h3>Crafts</h3>
+            <p>Handcrafted physical creative creations, intricate sculptures, custom decor, and bespoke artistic products.</p>
+          </div>
+          <div class="pillar-card">
+            <div class="pillar-icon"><i class="fa-solid fa-desktop"></i></div>
+            <h3>Digital Art</h3>
+            <p>Next-generation digital illustrations, 3D visual concepts, vector graphics, and media art compositions.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Featured Banner -->
+      <div class="container section-padding-bottom">
+        <div class="cta-box">
+          <h2>Ready to bring your artistic vision to life?</h2>
+          <p>Collaborate with UDYCLEMZ for custom commissions, corporate branding, or high-end artistic photography.</p>
+          <a href="#contact" class="btn btn-primary btn-lg nav-link">Start a Project</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT PAGE SECTION -->
+    <section id="about" class="page-section">
+      <div class="container section-padding">
+        <div class="text-center mb-4">
+          <span class="badge">Who We Are</span>
+          <h2 class="section-title">About <span class="gradient-text">UDYCLEMZ</span></h2>
+          <p class="section-subtitle">Innovating at the intersection of traditional art and modern visual design.</p>
+        </div>
+
+        <div class="about-hero-grid">
+          <div class="about-img-container">
+            <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=800&q=80" alt="UDYCLEMZ Art Studio" class="about-img">
+            <div class="experience-badge">
+              <span class="exp-number">10+</span>
+              <span class="exp-text">Years of Creative Excellence</span>
+            </div>
+          </div>
+          <div class="about-text-content">
+            <h3>What is UDYCLEMZ?</h3>
+            <p>
+              UDYCLEMZ is a multidisciplinary creative brand built on the relentless pursuit of visual aesthetics and creative distinction. We specialize in transforming abstract ideas, business visions, and personal narratives into captivating artistic reality.
+            </p>
+
+            <h3>What We Do & Our Approach</h3>
+            <p>
+              We provide an extensive range of creative services—from digital art, branding, and graphic design to photography, fine art painting, and handmade crafts. Our approach combines traditional artistic principles with modern digital tools, ensuring that every project resonates with authenticity and purpose.
+            </p>
+
+            <h3>Purpose & Vision</h3>
+            <p>
+              Our purpose is to inspire through visual art and empower brands through compelling design. We envision UDYCLEMZ as a global hub for artistic innovation, setting standard benchmarks for quality, ingenuity, and artistic storytelling.
+            </p>
+
+            <div class="why-us-list">
+              <div class="why-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Tailored artistic solutions customized to client requirements.</span>
+              </div>
+              <div class="why-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>High aesthetic quality across digital and physical mediums.</span>
+              </div>
+              <div class="why-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Dedicated support, collaborative process, and prompt execution.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY PAGE SECTION -->
+    <section id="gallery" class="page-section">
+      <div class="container section-padding">
+        <div class="text-center mb-4">
+          <span class="badge">Portfolio & Works</span>
+          <h2 class="section-title">Creative <span class="gradient-text">Gallery</span></h2>
+          <p class="section-subtitle">Tap any image to explore full view or external project showcase.</p>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="gallery-filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="graphics">Graphics</button>
+          <button class="filter-btn" data-filter="photography">Photo</button>
+          <button class="filter-btn" data-filter="digital">Digital Art</button>
+          <button class="filter-btn" data-filter="crafts">Crafts</button>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="gallery-grid">
+          <!-- Item 1 -->
+          <a href="https://example.com/gallery1" target="_blank" rel="noopener noreferrer" class="gallery-card" data-category="graphics">
+            <div class="gallery-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=600&q=80" alt="Graphic Design Showcase" loading="lazy">
+              <div class="gallery-overlay">
+                <span class="gallery-cat">Graphic Design</span>
+                <h4 class="gallery-title">Modern Brand System</h4>
+                <span class="external-link-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i> Open Link</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Item 2 -->
+          <a href="https://example.com/gallery2" target="_blank" rel="noopener noreferrer" class="gallery-card" data-category="photography">
+            <div class="gallery-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?auto=format&fit=crop&w=600&q=80" alt="Creative Photography" loading="lazy">
+              <div class="gallery-overlay">
+                <span class="gallery-cat">Photography</span>
+                <h4 class="gallery-title">Urban Shadow Study</h4>
+                <span class="external-link-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i> Open Link</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Item 3 -->
+          <a href="https://example.com/gallery3" target="_blank" rel="noopener noreferrer" class="gallery-card" data-category="digital">
+            <div class="gallery-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b675?auto=format&fit=crop&w=600&q=80" alt="Digital Painting Art" loading="lazy">
+              <div class="gallery-overlay">
+                <span class="gallery-cat">Digital Art</span>
+                <h4 class="gallery-title">Neon Abstract Composition</h4>
+                <span class="external-link-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i> Open Link</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Item 4 -->
+          <a href="https://example.com/gallery4" target="_blank" rel="noopener noreferrer" class="gallery-card" data-category="crafts">
+            <div class="gallery-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?auto=format&fit=crop&w=600&q=80" alt="Handmade Craft" loading="lazy">
+              <div class="gallery-overlay">
+                <span class="gallery-cat">Crafts</span>
+                <h4 class="gallery-title">Bespoke Clay & Wood Decor</h4>
+                <span class="external-link-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i> Open Link</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Item 5 -->
+          <a href="https://example.com/gallery5" target="_blank" rel="noopener noreferrer" class="gallery-card" data-category="graphics">
+            <div class="gallery-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=600&q=80" alt="Poster and Flyer Design" loading="lazy">
+              <div class="gallery-overlay">
+                <span class="gallery-cat">Poster Design</span>
+                <h4 class="gallery-title">Minimalist Event Poster</h4>
+                <span class="external-link-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i> Open Link</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Item 6 -->
+          <a href="https://example.com/gallery6" target="_blank" rel="noopener noreferrer" class="gallery-card" data-category="digital">
+            <div class="gallery-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=600&q=80" alt="Vector Illustration" loading="lazy">
+              <div class="gallery-overlay">
+                <span class="gallery-cat">Illustrations</span>
+                <h4 class="gallery-title">Surreal Vector Artwork</h4>
+                <span class="external-link-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i> Open Link</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES PAGE SECTION -->
+    <section id="services" class="page-section">
+      <div class="container section-padding">
+        <div class="text-center mb-4">
+          <span class="badge">What We Offer</span>
+          <h2 class="section-title">Our Creative <span class="gradient-text">Services</span></h2>
+          <p class="section-subtitle">Tailored artistic and design solutions built to scale your identity.</p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Service 1 -->
+          <div class="service-card">
+            <div class="service-icon"><i class="fa-solid fa-pen-nib"></i></div>
+            <h3>Graphic Designing</h3>
+            <p>Professional visual designs for businesses, individuals, events, brands, and social media campaigns.</p>
+            <button class="btn-text open-service-modal" data-service="Graphic Designing">Request Service <i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="service-card">
+            <div class="service-icon"><i class="fa-solid fa-camera"></i></div>
+            <h3>Photography</h3>
+            <p>Creative photography, artistic modeling portraits, product photography, and visual storytelling.</p>
+            <button class="btn-text open-service-modal" data-service="Photography">Request Service <i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="service-card">
+            <div class="service-icon"><i class="fa-solid fa-palette"></i></div>
+            <h3>Art & Illustration</h3>
+            <p>Original fine art, custom sketches, digital paintings, character concepts, and artistic illustrations.</p>
+            <button class="btn-text open-service-modal" data-service="Art & Illustration">Request Service <i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="service-card">
+            <div class="service-icon"><i class="fa-solid fa-cubes"></i></div>
+            <h3>Crafts</h3>
+            <p>Creative handmade crafts, custom decor items, bespoke art products, and tailored physical art pieces.</p>
+            <button class="btn-text open-service-modal" data-service="Crafts">Request Service <i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+
+          <!-- Service 5 -->
+          <div class="service-card">
+            <div class="service-icon"><i class="fa-solid fa-wand-magic"></i></div>
+            <h3>Digital Art</h3>
+            <p>High-resolution digital artwork, 3D artistic concepts, surreal imagery, and modern artwork compositions.</p>
+            <button class="btn-text open-service-modal" data-service="Digital Art">Request Service <i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+
+          <!-- Service 6 -->
+          <div class="service-card">
+            <div class="service-icon"><i class="fa-solid fa-bullhorn"></i></div>
+            <h3>Branding</h3>
+            <p>Comprehensive creative branding guidelines, logos, stationery, brand identities, and visual assets.</p>
+            <button class="btn-text open-service-modal" data-service="Branding">Request Service <i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+
+          <!-- Service 7 -->
+          <div class="service-card">
+            <div class="service-icon"><i class="fa-solid fa-file-image"></i></div>
+            <h3>Poster & Flyer Design</h3>
+            <p>High-impact promotional posters, flyers, event invitations, advertisements, and print collaterals.</p>
+            <button class="btn-text open-service-modal" data-service="Poster & Flyer Design">Request Service <i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+
+          <!-- Service 8 -->
+          <div class="service-card">
+            <div class="service-icon"><i class="fa-solid fa-hashtag"></i></div>
+            <h3>Social Media Designs</h3>
+            <p>Engaging visual graphics, story templates, social banners, and promotional content tailored for online presence.</p>
+            <button class="btn-text open-service-modal" data-service="Social Media Designs">Request Service <i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT PAGE SECTION -->
+    <section id="contact" class="page-section">
+      <div class="container section-padding">
+        <div class="text-center mb-4">
+          <span class="badge">Get In Touch</span>
+          <h2 class="section-title">Contact <span class="gradient-text">UDYCLEMZ</span></h2>
+          <p class="section-subtitle">For more inquiries, collaborations, bookings, or creative services, contact UDYCLEMZ.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Quick Call Card -->
+          <div class="contact-card phone-highlight-card">
+            <div class="contact-icon-large">
+              <i class="fa-solid fa-headset"></i>
+            </div>
+            <h3>Direct Android Call</h3>
+            <p>Tap below to connect directly with our creative desk on your Android device:</p>
+            <a href="tel:07076226098" class="phone-link-btn">
+              <i class="fa-solid fa-phone-flip"></i> 07076226098
+            </a>
+            <span class="phone-subtext">Clicking opens your phone's dialer</span>
+          </div>
+
+          <!-- Contact Form Card -->
+          <div class="contact-card">
+            <h3>Send Us a Message</h3>
+            <form id="contact-form" class="contact-form">
+              <div class="form-group">
+                <label for="contact-name">Full Name</label>
+                <input type="text" id="contact-name" class="form-control" placeholder="Enter your name" required>
+              </div>
+              <div class="form-group">
+                <label for="contact-email">Email Address</label>
+                <input type="email" id="contact-email" class="form-control" placeholder="name@example.com" required>
+              </div>
+              <div class="form-group">
+                <label for="contact-phone">Phone Number</label>
+                <input type="tel" id="contact-phone" class="form-control" placeholder="07076226098" required>
+              </div>
+              <div class="form-group">
+                <label for="contact-message">Message</label>
+                <textarea id="contact-message" class="form-control" rows="4" placeholder="Describe your creative project..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <h3>UDYCLEMZ</h3>
+        <p class="tagline">Art • Design • Creativity</p>
+        <p class="footer-desc">Creating exceptional visual experiences across digital and traditional media.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Direct Line</h4>
+        <a href="tel:07076226098" class="footer-phone-link">
+          <i class="fa-solid fa-phone"></i> 07076226098
+        </a>
+        <div class="social-icons">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="#" aria-label="Behance"><i class="fa-brands fa-behance"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom text-center">
+      <p>&copy; 2026 UDYCLEMZ. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Android Bottom Navigation Bar -->
+  <div class="mobile-bottom-bar">
+    <a href="#home" class="bottom-nav-item active nav-link">
+      <i class="fa-solid fa-house"></i>
+      <span>Home</span>
+    </a>
+    <a href="#gallery" class="bottom-nav-item nav-link">
+      <i class="fa-solid fa-image"></i>
+      <span>Gallery</span>
+    </a>
+    <a href="#services" class="bottom-nav-item nav-link">
+      <i class="fa-solid fa-briefcase"></i>
+      <span>Services</span>
+    </a>
+    <a href="#contact" class="bottom-nav-item nav-link">
+      <i class="fa-solid fa-envelope"></i>
+      <span>Contact</span>
+    </a>
+    <button class="bottom-nav-item" id="bottom-auth-btn">
+      <i class="fa-solid fa-user"></i>
+      <span>Account</span>
+    </button>
+  </div>
+
+  <!-- AUTHENTICATION MODAL (LOGIN / SIGNUP) -->
+  <div class="modal-backdrop" id="auth-modal">
+    <div class="modal-card">
+      <button class="modal-close" id="modal-close-btn">&times;</button>
+      
+      <!-- Modal Tabs -->
+      <div class="auth-tabs">
+        <button class="auth-tab-btn active" id="tab-login-btn">Login</button>
+        <button class="auth-tab-btn" id="tab-signup-btn">Create Account</button>
+      </div>
+
+      <!-- Login Form -->
+      <form id="login-form" class="auth-form active">
+        <h3 class="auth-title">Welcome Back</h3>
+        <p class="auth-subtitle">Sign in to manage your orders & preferences.</p>
+        <div class="form-group">
+          <label for="login-email">Email or Username</label>
+          <input type="text" id="login-email" class="form-control" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label for="login-password">Password</label>
+          <input type="password" id="login-password" class="form-control" placeholder="Enter password" required>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Login</button>
+      </form>
+
+      <!-- Signup Form -->
+      <form id="signup-form" class="auth-form">
+        <h3 class="auth-title">Join UDYCLEMZ</h3>
+        <p class="auth-subtitle">Create an account to start creative collaborations.</p>
+        <div class="form-group">
+          <label for="signup-name">Full Name</label>
+          <input type="text" id="signup-name" class="form-control" placeholder="John Doe" required>
+        </div>
+        <div class="form-group">
+          <label for="signup-email">Email Address</label>
+          <input type="email" id="signup-email" class="form-control" placeholder="john@example.com" required>
+        </div>
+        <div class="form-group">
+          <label for="signup-phone">Phone Number</label>
+          <input type="tel" id="signup-phone" class="form-control" placeholder="07076226098" required>
+        </div>
+        <div class="form-group">
+          <label for="signup-password">Password</label>
+          <input type="password" id="signup-password" class="form-control" placeholder="Create password" required>
+        </div>
+        <div class="form-group">
+          <label for="signup-confirm-password">Confirm Password</label>
+          <input type="password" id="signup-confirm-password" class="form-control" placeholder="Confirm password" required>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Create Account</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
